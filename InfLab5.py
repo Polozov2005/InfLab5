@@ -80,30 +80,35 @@ label_integral.grid(row=0, column=1, columnspan=2)
 label_A = ttk.Label(text="A")
 label_A.grid(row=1, column=1)
 entry_A = ttk.Entry()
+entry_A.insert(0, "1")
 entry_A.grid(row=1, column=2)
 
 # alpha
 label_alpha = ttk.Label(text="alpha")
 label_alpha.grid(row=2, column=1)
 entry_alpha = ttk.Entry()
+entry_alpha.insert(0, "-1")
 entry_alpha.grid(row=2, column=2)
 
 # m
 label_m = ttk.Label(text="m")
 label_m.grid(row=3, column=1)
 entry_m = ttk.Entry()
+entry_m.insert(0, "0")
 entry_m.grid(row=3, column=2)
 
 # x_min
 label_x_min = ttk.Label(text="x_min")
 label_x_min.grid(row=4, column=1)
 entry_x_min = ttk.Entry()
+entry_x_min.insert(0, "0")
 entry_x_min.grid(row=4, column=2)
 
 # x_max
 label_x_max = ttk.Label(text="x_max")
 label_x_max.grid(row=5, column=1)
 entry_x_max = ttk.Entry()
+entry_x_max.insert(0, "1")
 entry_x_max.grid(row=5, column=2)
 
 ## Вывод кнопок
