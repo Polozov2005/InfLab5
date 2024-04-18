@@ -1,14 +1,17 @@
+# Костыль, чтобы интерфейс не был размытым
+from ctypes import windll
+windll.shcore.SetProcessDpiAwareness(1)
+
 from tkinter import *
-from PIL import ImageTk, Image
-from pylatexenc.latex2text import LatexNodes2Text
-
+from tkinter import ttk
+ 
 root = Tk()
-root.geometry("1100x500")
-root['bg'] = 'grey'
-
-equation = r'$\frac{1}{2} \times 3 = \frac{3}{2}$' 
-equation_text = LatexNodes2Text().latex_to_text(equation)
-label = Label(root, text=equation_text, height=100, width=100)
-label.pack()
-
+root.title("METANIT.COM")
+root.geometry("250x200")
+ 
+for r in range(3):
+    for c in range(3):
+        btn = ttk.Button(text=f"({r},{c})", width=100)
+        btn.grid(row=r, column=c)
+ 
 root.mainloop()
