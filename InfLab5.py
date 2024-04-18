@@ -23,7 +23,7 @@ def plotting():
     # Настройки графика
     fig, ax = plt.subplots()
     locale.setlocale(locale.LC_NUMERIC, "de_RU")
-    font = {'family': 'Times New Roman',
+    font = {'family': 'Arial',
             'size': 12}
     plt.rc('font', **font)
     ax.ticklabel_format(useLocale=True)
@@ -61,6 +61,12 @@ windll.shcore.SetProcessDpiAwareness(1)
 root = Tk()
 root.title("Калькулятор")
 root.geometry("1080x720")
+root.resizable(False, False)
+root.attributes("-toolwindow", True)
+
+# Задание цвета фона
+color_bg = '#181818'
+root.configure(bg=color_bg)
 
 # Настройка веса столбцов, т. е. какую часть окна занимает каждый столбец
 root.columnconfigure(index=0, weight=4)
@@ -113,7 +119,19 @@ entry_x_min.grid(row=4, column=2)
 # x_max
 label_x_max = ttk.Label(text="x_max")
 label_x_max.grid(row=5, column=1)
-entry_x_max = ttk.Entry(validate="key", validatecommand=check)
+entry_x_max = Entry(validate="key", 
+                    validatecommand=check,
+                    background='black',
+                   foreground='white',
+                #    activebackground='grey',
+                #    activeforeground='black',
+                   highlightthickness=0,
+                #    width=3,
+                #    height=1,
+                   border=0,
+                #    cursor='hand2',
+                   font=('Arial', 16, 'bold')
+                    )
 entry_x_max.insert(0, "1")
 entry_x_max.grid(row=5, column=2)
 
@@ -125,7 +143,19 @@ def click_clear():
     entry_m.delete(0, END)
     entry_x_min.delete(0, END)
     entry_x_max.delete(0, END)
-btn_clear = ttk.Button(text='C', command=click_clear)
+btn_clear = Button(text='C', 
+                   command=click_clear,
+                   background='black',
+                   foreground='white',
+                   activebackground='grey',
+                   activeforeground='black',
+                   highlightthickness=0,
+                   width=3,
+                   height=1,
+                   border=0,
+                   cursor='hand2',
+                   font=('Arial', 16, 'bold')
+                   )
 btn_clear.grid(row=6, column=1)
 
 # Для расчёта
@@ -140,11 +170,26 @@ def click_solve():
     plotting()
     graph = PhotoImage(file="graph.png")
     canvas_graph.create_image(360, 360, image=graph)
-btn_solve = ttk.Button(text="Результат", command=click_solve)
+btn_solve = Button(text="Результат",
+                   command=click_solve,
+                   background='black',
+                   foreground='white',
+                   activebackground='grey',
+                   activeforeground='black',
+                   highlightthickness=0,
+                   width=10,
+                   height=1,
+                   border=0,
+                   cursor='hand2',
+                   font=('Arial', 16, 'bold')
+                   )
 btn_solve.grid(row=6, column=2)
 
 # Вывод результата
-label_solve = ttk.Label(text="Результат")
+label_solve = ttk.Label(
+    text="Результат",
+    background='blue'
+    )
 label_solve.grid(row=7, column=1, columnspan=2)
 
 # Вывод окна
