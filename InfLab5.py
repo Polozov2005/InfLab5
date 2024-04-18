@@ -52,6 +52,7 @@ def plotting():
 ### Создание интерфейса
 from tkinter import *
 from tkinter import ttk
+import re
 # Костыль для того, чтобы интерфейс не был размытым
 from ctypes import windll
 windll.shcore.SetProcessDpiAwareness(1)
@@ -76,44 +77,55 @@ label_integral = ttk.Label(text='Интеграл')
 label_integral.grid(row=0, column=1, columnspan=2)
 
 ## Ввод параметров
+# Задание валидации
+def is_valid(newval):
+    return re.match("^[-]?\d*[.,]?\d*$", newval) is not None
+check = (root.register(is_valid), "%P")
+
 # A
 label_A = ttk.Label(text="A")
 label_A.grid(row=1, column=1)
-entry_A = ttk.Entry()
+entry_A = ttk.Entry(validate="key", validatecommand=check)
 entry_A.insert(0, "1")
 entry_A.grid(row=1, column=2)
 
 # alpha
 label_alpha = ttk.Label(text="alpha")
 label_alpha.grid(row=2, column=1)
-entry_alpha = ttk.Entry()
+entry_alpha = ttk.Entry(validate="key", validatecommand=check)
 entry_alpha.insert(0, "-1")
 entry_alpha.grid(row=2, column=2)
 
 # m
 label_m = ttk.Label(text="m")
 label_m.grid(row=3, column=1)
-entry_m = ttk.Entry()
+entry_m = ttk.Entry(validate="key", validatecommand=check)
 entry_m.insert(0, "0")
 entry_m.grid(row=3, column=2)
 
 # x_min
 label_x_min = ttk.Label(text="x_min")
 label_x_min.grid(row=4, column=1)
-entry_x_min = ttk.Entry()
+entry_x_min = ttk.Entry(validate="key", validatecommand=check)
 entry_x_min.insert(0, "0")
 entry_x_min.grid(row=4, column=2)
 
 # x_max
 label_x_max = ttk.Label(text="x_max")
 label_x_max.grid(row=5, column=1)
-entry_x_max = ttk.Entry()
+entry_x_max = ttk.Entry(validate="key", validatecommand=check)
 entry_x_max.insert(0, "1")
 entry_x_max.grid(row=5, column=2)
 
 ## Вывод кнопок
 # Для очищения полей ввода
-btn_clear = ttk.Button(text='C')
+def click_clear():
+    entry_A.delete(0, END)
+    entry_alpha.delete(0, END)
+    entry_m.delete(0, END)
+    entry_x_min.delete(0, END)
+    entry_x_max.delete(0, END)
+btn_clear = ttk.Button(text='C', command=click_clear)
 btn_clear.grid(row=6, column=1)
 
 # Для расчёта
