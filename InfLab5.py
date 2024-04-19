@@ -88,10 +88,14 @@ def is_valid(newval):
     return re.match("^[-]?\d*[.,]?\d*$", newval) is not None
 check = (root.register(is_valid), "%P")
 
+# Настройка оформления полей ввода
+style = ttk.Style(root)
+style.configure("TEntry", background="black")
+
 # A
 label_A = ttk.Label(text="A")
 label_A.grid(row=1, column=1)
-entry_A = ttk.Entry(validate="key", validatecommand=check)
+entry_A = ttk.Entry(validate="key", validatecommand=check, style="BW.TEntry")
 entry_A.insert(0, "1")
 entry_A.grid(row=1, column=2)
 
@@ -122,15 +126,10 @@ label_x_max.grid(row=5, column=1)
 entry_x_max = Entry(validate="key", 
                     validatecommand=check,
                     background='black',
-                   foreground='white',
-                #    activebackground='grey',
-                #    activeforeground='black',
-                   highlightthickness=0,
-                #    width=3,
-                #    height=1,
-                   border=0,
-                #    cursor='hand2',
-                   font=('Arial', 16, 'bold')
+                    foreground='white',
+                    highlightthickness=0,
+                    border=0,
+                    font=('Arial', 16, 'bold')
                     )
 entry_x_max.insert(0, "1")
 entry_x_max.grid(row=5, column=2)
