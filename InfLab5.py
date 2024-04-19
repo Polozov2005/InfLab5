@@ -71,7 +71,6 @@ root = Tk()
 root.title("Калькулятор")
 root.geometry("1080x720")
 root.resizable(False, False)
-root.attributes("-toolwindow", True)
 
 # Настройка оформления окна
 background_root = '#181818'
@@ -92,7 +91,8 @@ canvas_graph.create_image(360, 360, image=initial_graph)
 canvas_graph.grid(row=0, column=0, rowspan=8)
 
 # Вывод интеграла
-label_integral = ttk.Label(text='Интеграл')
+image_integral = PhotoImage(file="integral.png")
+label_integral = ttk.Label(image=image_integral, background=background_root)
 label_integral.grid(row=0, column=1, columnspan=2)
 
 ## Ввод параметров
@@ -109,10 +109,11 @@ foreground_entry = foreground_root
 insertbackground_entry = foreground_entry
 highlightthickness_entry = 0
 border_entry = 0
-width_entry = 12
+width_entry = 15
 
 # A
-label_A = ttk.Label(text="A")
+image_A = PhotoImage(file="A.png")
+label_A = ttk.Label(image=image_A, background=background_root)
 label_A.grid(row=1, column=1)
 entry_A = Entry(validate="key", 
                 validatecommand=check,
@@ -128,7 +129,8 @@ entry_A.insert(0, "1")
 entry_A.grid(row=1, column=2)
 
 # alpha
-label_alpha = ttk.Label(text="alpha")
+image_alpha = PhotoImage(file="alpha.png")
+label_alpha = ttk.Label(image=image_alpha, background=background_root)
 label_alpha.grid(row=2, column=1)
 entry_alpha = Entry(validate="key", 
                     validatecommand=check,
@@ -144,7 +146,8 @@ entry_alpha.insert(0, "-1")
 entry_alpha.grid(row=2, column=2)
 
 # m
-label_m = ttk.Label(text="m")
+image_m = PhotoImage(file="m.png")
+label_m = ttk.Label(image=image_m, background=background_root)
 label_m.grid(row=3, column=1)
 entry_m = Entry(validate="key", 
                 validatecommand=check,
@@ -160,7 +163,8 @@ entry_m.insert(0, "0")
 entry_m.grid(row=3, column=2)
 
 # x_min
-label_x_min = ttk.Label(text="x_min")
+image_x_min = PhotoImage(file="x_min.png")
+label_x_min = ttk.Label(image=image_x_min, background=background_root)
 label_x_min.grid(row=4, column=1)
 entry_x_min = Entry(validate="key", 
                     validatecommand=check,
@@ -176,7 +180,8 @@ entry_x_min.insert(0, "0")
 entry_x_min.grid(row=4, column=2)
 
 # x_max
-label_x_max = ttk.Label(text="x_max")
+image_x_max = PhotoImage(file="x_max.png")
+label_x_max = ttk.Label(image=image_x_max, background=background_root)
 label_x_max.grid(row=5, column=1)
 entry_x_max = Entry(validate="key", 
                     validatecommand=check,
@@ -234,7 +239,7 @@ btn_solve = Button(text="Результат",
                    activebackground=background_root,
                    activeforeground=bluecolor,
                    highlightthickness=0,
-                   width=10,
+                   width=13,
                    height=1,
                    border=0,
                    cursor='hand2',
@@ -251,7 +256,7 @@ label_solve = Label(
     highlightbackground=bluecolor,
     highlightthickness=2,
     height=2,
-    width=16,
+    width=20,
     font=(font_root, fontsize_root, 'bold')
     )
 label_solve.grid(row=7, column=1, columnspan=2)
