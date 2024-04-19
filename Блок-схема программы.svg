@@ -2,51 +2,47 @@
 <svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.54 651.97">
   <defs>
     <style>
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+      .cls-1 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
         fill: none;
         stroke: #fff;
         stroke-miterlimit: 10;
       }
 
       .cls-6 {
-        font-size: 12px;
-      }
-
-      .cls-6, .cls-7, .cls-8 {
-        fill: #fff;
-        font-family: TimesNewRomanPSMT, 'Times New Roman';
-      }
-
-      .cls-9 {
-        letter-spacing: -.04em;
+        letter-spacing: 0em;
       }
 
       .cls-7 {
-        font-size: 15.31px;
+        font-size: 12px;
       }
 
-      .cls-2 {
-        stroke-dasharray: 0 0 4.05 4.05;
-      }
-
-      .cls-10 {
-        letter-spacing: -.05em;
-      }
-
-      .cls-3 {
-        stroke-dasharray: 0 0 4.14 4.14;
+      .cls-7, .cls-8, .cls-9 {
+        fill: #fff;
+        font-family: TimesNewRomanPSMT, 'Times New Roman';
       }
 
       .cls-8 {
         font-size: 10.2px;
       }
 
-      .cls-11 {
-        letter-spacing: 0em;
+      .cls-3 {
+        stroke-dasharray: 0 0 4.05 4.05;
       }
 
       .cls-4 {
-        stroke-dasharray: 0 4;
+        stroke-dasharray: 0 0 4.14 4.14;
+      }
+
+      .cls-9 {
+        font-size: 15.31px;
+      }
+
+      .cls-10 {
+        letter-spacing: -.05em;
       }
 
       .cls-5 {
@@ -56,88 +52,96 @@
   </defs>
   <rect x="0" y="0" width="453.54" height="651.97"/>
   <g>
-    <rect class="cls-1" x="120.47" y="106.3" width="85.04" height="42.52" rx="21.26" ry="21.26"/>
-    <text class="cls-7" transform="translate(139.41 132.88)"><tspan x="0" y="0">Н</tspan><tspan class="cls-9" x="11.05" y="0">а</tspan><tspan x="17.24" y="0">ч</tspan><tspan class="cls-11" x="24.93" y="0">а</tspan><tspan x="31.86" y="0">ло</tspan></text>
+    <rect class="cls-2" x="120.47" y="106.3" width="85.04" height="42.52" rx="21.26" ry="21.26"/>
+    <text class="cls-9" transform="translate(139.41 132.88)"><tspan x="0" y="0">Н</tspan><tspan class="cls-1" x="11.05" y="0">а</tspan><tspan x="17.24" y="0">ч</tspan><tspan class="cls-6" x="24.93" y="0">а</tspan><tspan x="31.86" y="0">ло</tspan></text>
   </g>
   <g>
-    <circle class="cls-1" cx="162.99" cy="191.34" r="14.17"/>
-    <text class="cls-6" transform="translate(159.99 195.51)"><tspan x="0" y="0">1</tspan></text>
+    <circle class="cls-2" cx="162.99" cy="191.34" r="14.17"/>
+    <text class="cls-7" transform="translate(159.99 195.51)"><tspan x="0" y="0">1</tspan></text>
   </g>
   <g>
-    <circle class="cls-1" cx="162.99" cy="233.86" r="14.17"/>
-    <text class="cls-6" transform="translate(159.99 238.03)"><tspan x="0" y="0">2</tspan></text>
+    <circle class="cls-2" cx="162.99" cy="233.86" r="14.17"/>
+    <text class="cls-7" transform="translate(159.99 238.03)"><tspan x="0" y="0">2</tspan></text>
   </g>
-  <line class="cls-1" x1="162.99" y1="148.82" x2="162.99" y2="177.17"/>
-  <line class="cls-1" x1="162.99" y1="248.03" x2="162.99" y2="290.55"/>
+  <line class="cls-2" x1="162.99" y1="148.82" x2="162.99" y2="177.17"/>
+  <line class="cls-2" x1="162.99" y1="248.03" x2="162.99" y2="290.55"/>
   <g>
-    <polyline class="cls-1" points="191.34 260.2 191.34 262.2 189.34 262.2"/>
-    <line class="cls-2" x1="185.29" y1="262.2" x2="138.67" y2="262.2"/>
-    <polyline class="cls-1" points="136.65 262.2 134.65 262.2 134.65 260.2"/>
-    <line class="cls-3" x1="134.65" y1="256.07" x2="134.65" y2="167.06"/>
-    <polyline class="cls-1" points="134.65 164.99 134.65 162.99 136.65 162.99"/>
-    <line class="cls-2" x1="140.7" y1="162.99" x2="187.31" y2="162.99"/>
-    <polyline class="cls-1" points="189.34 162.99 191.34 162.99 191.34 164.99"/>
-    <line class="cls-3" x1="191.34" y1="169.13" x2="191.34" y2="258.13"/>
+    <polyline class="cls-2" points="191.34 260.2 191.34 262.2 189.34 262.2"/>
+    <line class="cls-3" x1="185.29" y1="262.2" x2="138.67" y2="262.2"/>
+    <polyline class="cls-2" points="136.65 262.2 134.65 262.2 134.65 260.2"/>
+    <line class="cls-4" x1="134.65" y1="256.07" x2="134.65" y2="167.06"/>
+    <polyline class="cls-2" points="134.65 164.99 134.65 162.99 136.65 162.99"/>
+    <line class="cls-3" x1="140.7" y1="162.99" x2="187.31" y2="162.99"/>
+    <polyline class="cls-2" points="189.34 162.99 191.34 162.99 191.34 164.99"/>
+    <line class="cls-4" x1="191.34" y1="169.13" x2="191.34" y2="258.13"/>
   </g>
   <g>
-    <path class="cls-1" d="m236.69,177.17h-17.01v56.69h17.01"/>
+    <path class="cls-2" d="m236.69,177.17h-17.01v56.69h17.01"/>
     <text class="cls-8" transform="translate(225.35 209.06)"><tspan x="0" y="0">Проведение расчётов</tspan></text>
   </g>
   <g>
-    <line class="cls-1" x1="191.34" y1="205.51" x2="193.34" y2="205.51"/>
+    <line class="cls-2" x1="191.34" y1="205.51" x2="193.34" y2="205.51"/>
     <line class="cls-5" x1="196.82" y1="205.51" x2="215.95" y2="205.51"/>
-    <line class="cls-1" x1="217.69" y1="205.51" x2="219.69" y2="205.51"/>
+    <line class="cls-2" x1="217.69" y1="205.51" x2="219.69" y2="205.51"/>
   </g>
   <g>
-    <circle class="cls-1" cx="162.99" cy="304.72" r="14.17"/>
-    <text class="cls-6" transform="translate(159.99 308.89)"><tspan x="0" y="0">3</tspan></text>
+    <circle class="cls-2" cx="162.99" cy="304.72" r="14.17"/>
+    <text class="cls-7" transform="translate(159.99 308.89)"><tspan x="0" y="0">3</tspan></text>
   </g>
   <g>
-    <circle class="cls-1" cx="162.99" cy="347.24" r="14.17"/>
-    <text class="cls-6" transform="translate(159.99 351.41)"><tspan x="0" y="0">4</tspan></text>
+    <circle class="cls-2" cx="162.99" cy="347.24" r="14.17"/>
+    <text class="cls-7" transform="translate(159.99 351.41)"><tspan x="0" y="0">4</tspan></text>
   </g>
   <g>
-    <polyline class="cls-1" points="191.34 373.59 191.34 375.59 189.34 375.59"/>
-    <line class="cls-2" x1="185.29" y1="375.59" x2="138.67" y2="375.59"/>
-    <polyline class="cls-1" points="136.65 375.59 134.65 375.59 134.65 373.59"/>
-    <line class="cls-3" x1="134.65" y1="369.45" x2="134.65" y2="280.45"/>
-    <polyline class="cls-1" points="134.65 278.38 134.65 276.38 136.65 276.38"/>
-    <line class="cls-2" x1="140.7" y1="276.38" x2="187.31" y2="276.38"/>
-    <polyline class="cls-1" points="189.34 276.38 191.34 276.38 191.34 278.38"/>
-    <line class="cls-3" x1="191.34" y1="282.52" x2="191.34" y2="371.52"/>
+    <polyline class="cls-2" points="191.34 373.59 191.34 375.59 189.34 375.59"/>
+    <line class="cls-3" x1="185.29" y1="375.59" x2="138.67" y2="375.59"/>
+    <polyline class="cls-2" points="136.65 375.59 134.65 375.59 134.65 373.59"/>
+    <line class="cls-4" x1="134.65" y1="369.45" x2="134.65" y2="280.45"/>
+    <polyline class="cls-2" points="134.65 278.38 134.65 276.38 136.65 276.38"/>
+    <line class="cls-3" x1="140.7" y1="276.38" x2="187.31" y2="276.38"/>
+    <polyline class="cls-2" points="189.34 276.38 191.34 276.38 191.34 278.38"/>
+    <line class="cls-4" x1="191.34" y1="282.52" x2="191.34" y2="371.52"/>
   </g>
   <g>
-    <path class="cls-1" d="m236.69,290.55h-17.01v56.69h17.01"/>
+    <path class="cls-2" d="m236.69,290.55h-17.01v56.69h17.01"/>
     <text class="cls-8" transform="translate(225.35 322.44)"><tspan x="0" y="0">Постройка графика</tspan></text>
   </g>
-  <line class="cls-4" x1="191.34" y1="318.9" x2="219.69" y2="318.9"/>
-  <line class="cls-1" x1="162.99" y1="361.42" x2="162.99" y2="403.94"/>
   <g>
-    <circle class="cls-1" cx="162.99" cy="418.11" r="14.17"/>
-    <text class="cls-6" transform="translate(159.99 422.28)"><tspan x="0" y="0">5</tspan></text>
+    <line class="cls-2" x1="191.34" y1="318.9" x2="193.34" y2="318.9"/>
+    <line class="cls-5" x1="196.82" y1="318.9" x2="215.95" y2="318.9"/>
+    <line class="cls-2" x1="217.69" y1="318.9" x2="219.69" y2="318.9"/>
+  </g>
+  <line class="cls-2" x1="162.99" y1="361.42" x2="162.99" y2="403.94"/>
+  <g>
+    <circle class="cls-2" cx="162.99" cy="418.11" r="14.17"/>
+    <text class="cls-7" transform="translate(159.99 422.28)"><tspan x="0" y="0">5</tspan></text>
   </g>
   <g>
-    <circle class="cls-1" cx="162.99" cy="460.63" r="14.17"/>
-    <text class="cls-6" transform="translate(159.99 464.8)"><tspan x="0" y="0">6</tspan></text>
+    <circle class="cls-2" cx="162.99" cy="460.63" r="14.17"/>
+    <text class="cls-7" transform="translate(159.99 464.8)"><tspan x="0" y="0">6</tspan></text>
   </g>
   <g>
-    <polyline class="cls-1" points="191.34 486.98 191.34 488.98 189.34 488.98"/>
-    <line class="cls-2" x1="185.29" y1="488.98" x2="138.67" y2="488.98"/>
-    <polyline class="cls-1" points="136.65 488.98 134.65 488.98 134.65 486.98"/>
-    <line class="cls-3" x1="134.65" y1="482.84" x2="134.65" y2="393.83"/>
-    <polyline class="cls-1" points="134.65 391.76 134.65 389.76 136.65 389.76"/>
-    <line class="cls-2" x1="140.7" y1="389.76" x2="187.31" y2="389.76"/>
-    <polyline class="cls-1" points="189.34 389.76 191.34 389.76 191.34 391.76"/>
-    <line class="cls-3" x1="191.34" y1="395.9" x2="191.34" y2="484.91"/>
+    <polyline class="cls-2" points="191.34 486.98 191.34 488.98 189.34 488.98"/>
+    <line class="cls-3" x1="185.29" y1="488.98" x2="138.67" y2="488.98"/>
+    <polyline class="cls-2" points="136.65 488.98 134.65 488.98 134.65 486.98"/>
+    <line class="cls-4" x1="134.65" y1="482.84" x2="134.65" y2="393.83"/>
+    <polyline class="cls-2" points="134.65 391.76 134.65 389.76 136.65 389.76"/>
+    <line class="cls-3" x1="140.7" y1="389.76" x2="187.31" y2="389.76"/>
+    <polyline class="cls-2" points="189.34 389.76 191.34 389.76 191.34 391.76"/>
+    <line class="cls-4" x1="191.34" y1="395.9" x2="191.34" y2="484.91"/>
   </g>
   <g>
-    <path class="cls-1" d="m236.69,403.94h-17.01v56.69h17.01"/>
+    <path class="cls-2" d="m236.69,403.94h-17.01v56.69h17.01"/>
     <text class="cls-8" transform="translate(225.35 435.83)"><tspan x="0" y="0">Создание интерфейса</tspan></text>
   </g>
-  <line class="cls-4" x1="191.34" y1="432.28" x2="219.69" y2="432.28"/>
   <g>
-    <rect class="cls-1" x="120.47" y="503.15" width="85.04" height="42.52" rx="21.26" ry="21.26"/>
-    <text class="cls-7" transform="translate(142.85 529.73)"><tspan class="cls-10" x="0" y="0">К</tspan><tspan x="9.45" y="0">онец</tspan></text>
+    <line class="cls-2" x1="191.34" y1="432.28" x2="193.34" y2="432.28"/>
+    <line class="cls-5" x1="196.82" y1="432.28" x2="215.95" y2="432.28"/>
+    <line class="cls-2" x1="217.69" y1="432.28" x2="219.69" y2="432.28"/>
   </g>
-  <line class="cls-1" x1="162.99" y1="474.8" x2="162.99" y2="503.15"/>
+  <g>
+    <rect class="cls-2" x="120.47" y="503.15" width="85.04" height="42.52" rx="21.26" ry="21.26"/>
+    <text class="cls-9" transform="translate(142.85 529.73)"><tspan class="cls-10" x="0" y="0">К</tspan><tspan x="9.45" y="0">онец</tspan></text>
+  </g>
+  <line class="cls-2" x1="162.99" y1="474.8" x2="162.99" y2="503.15"/>
 </svg>
